@@ -1,5 +1,17 @@
-@media (min-width: 800px) {
+/* if the device remains within 300px by 900px the styling inside will apply */
+/* outside those dimensions it will go back to default */
+
+@media (min-width: 300px) and (max-width: 900px) {
   body {
     background-color: peru;
+  }
+
+  p {
+    background-color: red;
+    text-align: center;
+  }
+
+  img {
+    transform: scaleX(-1);
   }
 }
